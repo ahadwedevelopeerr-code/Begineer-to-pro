@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Courses | CodePath</title><meta name="description" content="Explore practical lessons in HTML, CSS, JavaScript, and Node.js.">
+  <meta property="og:title" content="Courses | CodePath"><meta property="og:description" content="Four clear paths to build your web development skills."><meta name="theme-color" content="#101622">
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="./css/style.css">
+  <script src="./js/config.js" defer></script><script src="./js/app.js" defer></script><script src="./js/courses.js" defer></script><script src="./js/chatbot.js" defer></script>
+</head>
+<body>
+  <header class="site-header"><a class="brand" href="./" aria-label="CodePath home"><span class="brand-mark">C<span>_</span></span><span>codepath</span></a><button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button><nav class="main-nav" aria-label="Main navigation"><a href="./">Home</a><a class="active" href="./courses.html">Courses</a><a href="./quiz.html">Practice MCQs</a><a href="./index.html#about">About</a><a href="./index.html#contact">Contact</a><a class="nav-login" href="./login.html">Admin Login <span aria-hidden="true">↗</span></a></nav></header>
+  <main class="learning-main page-width">
+    <section class="page-intro"><p class="eyebrow">THE CODEPATH CURRICULUM</p><h1>Build your skills,<br><em>one layer at a time.</em></h1><p>Four learning paths take you from the structure of a page to the services behind it. Pick up where you left off or start fresh.</p></section>
+    <div class="learning-layout">
+      <aside class="course-sidebar"><p class="sidebar-label">YOUR LEARNING PATH</p><div id="course-nav" class="course-nav"></div><div class="sidebar-progress"><span>YOUR OVERALL PROGRESS</span><strong id="overall-progress-label">0%</strong><div class="progress-track"><i id="overall-progress-bar"></i></div></div><a href="./quiz.html" class="sidebar-quiz">Test your knowledge <span>↗</span></a></aside>
+      <section class="lesson-area" id="lesson-area" aria-live="polite"><div class="lesson-loading"><span class="loader"></span><p>Preparing your learning path...</p></div></section>
+    </div>
+  </main>
+  <footer class="site-footer"><div class="page-width footer-main"><a class="brand" href="./"><span class="brand-mark">C<span>_</span></span><span>codepath</span></a><p>Make the web make sense.</p><nav aria-label="Footer navigation"><a href="./courses.html">Courses</a><a href="./quiz.html">Practice MCQs</a><a href="./login.html">Admin</a></nav></div><div class="page-width footer-bottom"><span>© <span data-year></span> CodePath Learning</span><span>Built for the curious.</span></div></footer>
+</body>
+</html>

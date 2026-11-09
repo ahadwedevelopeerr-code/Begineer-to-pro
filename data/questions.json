@@ -1,0 +1,1130 @@
+{
+  "html": [
+    {
+      "id": "html-01",
+      "question": "Which element should contain the primary, unique content of a page?",
+      "options": [
+        "<main>",
+        "<aside>",
+        "<footer>",
+        "<nav>"
+      ],
+      "answer": 0,
+      "explanation": "The main element identifies the document's dominant content and should generally appear once.",
+      "difficulty": "beginner",
+      "category": "conceptual"
+    },
+    {
+      "id": "html-02",
+      "question": "Which attribute connects a label to a form control?",
+      "options": [
+        "name",
+        "for matching the control id",
+        "title",
+        "target"
+      ],
+      "answer": 1,
+      "explanation": "The label's for value must match the control's id to create an explicit accessible association.",
+      "difficulty": "beginner",
+      "category": "conceptual"
+    },
+    {
+      "id": "html-03",
+      "question": "What does the lang attribute on the html element help identify?",
+      "options": [
+        "The page's layout direction only",
+        "The document's primary language",
+        "The browser engine",
+        "The author's location"
+      ],
+      "answer": 1,
+      "explanation": "A correct language declaration helps assistive technology pronounce content and supports language processing.",
+      "difficulty": "beginner",
+      "category": "conceptual"
+    },
+    {
+      "id": "html-04",
+      "question": "Which element is most appropriate for a self-contained article that could stand on its own?",
+      "options": [
+        "<article>",
+        "<span>",
+        "<label>",
+        "<br>"
+      ],
+      "answer": 0,
+      "explanation": "Article represents self-contained content such as a post, story, or independent entry.",
+      "difficulty": "beginner",
+      "category": "conceptual"
+    },
+    {
+      "id": "html-05",
+      "question": "What is the correct way to provide alternative text for a decorative image?",
+      "options": [
+        "Omit src",
+        "Use alt=\"\"",
+        "Use title=\"decorative\"",
+        "Put the text in the filename"
+      ],
+      "answer": 1,
+      "explanation": "An empty alt tells assistive technology the image is decorative and can be skipped.",
+      "difficulty": "beginner",
+      "category": "conceptual"
+    },
+    {
+      "id": "html-06",
+      "question": "Which element creates a hyperlink to another page?",
+      "options": [
+        "<link> in the body",
+        "<a href=\"...\">",
+        "<href>",
+        "<route>"
+      ],
+      "answer": 1,
+      "explanation": "An anchor with href creates a navigable link. The link element is used for document resources in the head.",
+      "difficulty": "beginner",
+      "category": "practical"
+    },
+    {
+      "id": "html-07",
+      "question": "Which input type provides built-in email-format validation?",
+      "options": [
+        "type=\"text\"",
+        "type=\"mailbox\"",
+        "type=\"email\"",
+        "type=\"address\""
+      ],
+      "answer": 2,
+      "explanation": "The email input type provides suitable virtual keyboards and basic built-in format validation.",
+      "difficulty": "beginner",
+      "category": "practical"
+    },
+    {
+      "id": "html-08",
+      "question": "Which heading structure is generally best for a page with one main topic and two subtopics?",
+      "options": [
+        "h1 then h2 for each subtopic",
+        "Only h4 headings",
+        "Use headings based on visual size",
+        "Start with h3 then h1"
+      ],
+      "answer": 0,
+      "explanation": "Headings should form a meaningful hierarchy; visual appearance can be styled separately with CSS.",
+      "difficulty": "beginner",
+      "category": "seo"
+    },
+    {
+      "id": "html-09",
+      "question": "Which metadata value helps search results summarize a page when selected?",
+      "options": [
+        "meta description",
+        "meta viewport",
+        "charset",
+        "robots only"
+      ],
+      "answer": 0,
+      "explanation": "A concise, accurate meta description may be used as a search result snippet, though search engines can choose other text.",
+      "difficulty": "intermediate",
+      "category": "seo"
+    },
+    {
+      "id": "html-10",
+      "question": "Which tag is used for the page's main visible heading in this snippet? <h1>Road Safety</h1>",
+      "options": [
+        "h1",
+        "head",
+        "title",
+        "meta"
+      ],
+      "answer": 0,
+      "explanation": "The h1 element is a visible heading; title is metadata displayed in browser chrome and often search results.",
+      "difficulty": "intermediate",
+      "category": "practical"
+    },
+    {
+      "id": "html-11",
+      "question": "Why should a page generally avoid multiple unrelated main elements?",
+      "options": [
+        "Main elements cannot contain headings",
+        "It makes the primary content landmark ambiguous",
+        "Browsers refuse to render them",
+        "They prevent CSS from loading"
+      ],
+      "answer": 1,
+      "explanation": "A single main landmark gives assistive technology users a predictable shortcut to the central page content.",
+      "difficulty": "intermediate",
+      "category": "conceptual"
+    },
+    {
+      "id": "html-12",
+      "question": "Which attribute makes a button inside a form submit the form by default?",
+      "options": [
+        "type=\"submit\"",
+        "role=\"form\"",
+        "action=\"submit\"",
+        "name=\"submit\""
+      ],
+      "answer": 0,
+      "explanation": "A button's submit type submits its owning form; explicit types avoid accidental submissions for other buttons.",
+      "difficulty": "intermediate",
+      "category": "practical"
+    },
+    {
+      "id": "html-13",
+      "question": "What is the best link text for a page about CSS Grid?",
+      "options": [
+        "Click here",
+        "More",
+        "Read the CSS Grid layout guide",
+        "Link 3"
+      ],
+      "answer": 2,
+      "explanation": "Descriptive link text communicates the destination, including when links are encountered out of context.",
+      "difficulty": "intermediate",
+      "category": "seo"
+    },
+    {
+      "id": "html-14",
+      "question": "What is a key benefit of semantic HTML for search and accessibility?",
+      "options": [
+        "It automatically guarantees a top ranking",
+        "It gives content and regions meaningful structure",
+        "It replaces the need for text",
+        "It prevents all browser differences"
+      ],
+      "answer": 1,
+      "explanation": "Semantic elements expose useful content relationships to browsers, assistive technology, and search crawlers.",
+      "difficulty": "intermediate",
+      "category": "seo"
+    },
+    {
+      "id": "html-15",
+      "question": "Which element should group primary navigation links?",
+      "options": [
+        "<nav>",
+        "<address>",
+        "<figure>",
+        "<summary>"
+      ],
+      "answer": 0,
+      "explanation": "Nav represents a major block of navigation links. Not every collection of links needs a nav landmark.",
+      "difficulty": "intermediate",
+      "category": "conceptual"
+    },
+    {
+      "id": "html-16",
+      "question": "What does loading=\"lazy\" on an image generally request?",
+      "options": [
+        "Load the image only after a click",
+        "Defer loading until it is near the viewport",
+        "Compress the image automatically",
+        "Hide it from search"
+      ],
+      "answer": 1,
+      "explanation": "Lazy loading can defer off-screen images, reducing initial network work. Avoid lazy-loading important above-the-fold images.",
+      "difficulty": "intermediate",
+      "category": "practical"
+    },
+    {
+      "id": "html-17",
+      "question": "Which is the strongest reason to include a unique title on every page?",
+      "options": [
+        "It sets the background color",
+        "It helps users and search engines distinguish pages",
+        "It replaces the h1",
+        "It makes every image accessible"
+      ],
+      "answer": 1,
+      "explanation": "A descriptive, page-specific title improves browser tab identification and can inform search result titles.",
+      "difficulty": "advanced",
+      "category": "seo"
+    },
+    {
+      "id": "html-18",
+      "question": "When should an image's alt text describe the image's appearance?",
+      "options": [
+        "For every image, regardless of purpose",
+        "When the image conveys information not available in nearby text",
+        "Only when an image fails to load",
+        "Never; captions replace alt text"
+      ],
+      "answer": 1,
+      "explanation": "Alternative text should convey the image's relevant purpose or information, not repeat nearby content unnecessarily.",
+      "difficulty": "advanced",
+      "category": "conceptual"
+    },
+    {
+      "id": "html-19",
+      "question": "What does a canonical link primarily communicate to search engines?",
+      "options": [
+        "Which URL is the preferred version among duplicates",
+        "That the page should never be indexed",
+        "The author's profile",
+        "A required redirect destination"
+      ],
+      "answer": 0,
+      "explanation": "Canonical metadata signals the preferred URL for duplicate or substantially similar content; it is a hint, not an absolute directive.",
+      "difficulty": "advanced",
+      "category": "seo"
+    },
+    {
+      "id": "html-20",
+      "question": "Why should heading levels not be chosen only for their default font size?",
+      "options": [
+        "Headings cannot be styled",
+        "Heading levels communicate document structure",
+        "Search engines ignore all headings",
+        "Each level has a fixed color"
+      ],
+      "answer": 1,
+      "explanation": "Use heading levels to represent content hierarchy, then style the visual size with CSS.",
+      "difficulty": "advanced",
+      "category": "seo"
+    }
+  ],
+  "css": [
+    {
+      "id": "css-01",
+      "question": "What does display: flex establish on an element?",
+      "options": [
+        "A flex formatting context for its children",
+        "A two-dimensional grid",
+        "A new document",
+        "A fixed position"
+      ],
+      "answer": 0,
+      "explanation": "Flexbox lays out direct children along a main axis and is ideal for one-dimensional alignment.",
+      "difficulty": "beginner",
+      "category": "conceptual"
+    },
+    {
+      "id": "css-02",
+      "question": "Which property adds space between flex or grid items?",
+      "options": [
+        "gap",
+        "outline",
+        "z-index",
+        "float"
+      ],
+      "answer": 0,
+      "explanation": "The gap property sets spacing between items in flex, grid, and multicol layouts.",
+      "difficulty": "beginner",
+      "category": "practical"
+    },
+    {
+      "id": "css-03",
+      "question": "What does box-sizing: border-box do to a declared width?",
+      "options": [
+        "Includes padding and border in the width",
+        "Includes margin but not padding",
+        "Makes the box fixed",
+        "Removes the border"
+      ],
+      "answer": 0,
+      "explanation": "With border-box, the declared dimensions include the content, padding, and border.",
+      "difficulty": "beginner",
+      "category": "conceptual"
+    },
+    {
+      "id": "css-04",
+      "question": "Which CSS unit is relative to the root element's font size?",
+      "options": [
+        "rem",
+        "px",
+        "vw",
+        "deg"
+      ],
+      "answer": 0,
+      "explanation": "rem is based on the root html element's font size; em is relative to the relevant element context.",
+      "difficulty": "beginner",
+      "category": "conceptual"
+    },
+    {
+      "id": "css-05",
+      "question": "Which rule targets elements with class name card?",
+      "options": [
+        "#card",
+        ".card",
+        "card()",
+        "*card"
+      ],
+      "answer": 1,
+      "explanation": "A leading dot selects a class. A hash selects an id.",
+      "difficulty": "beginner",
+      "category": "practical"
+    },
+    {
+      "id": "css-06",
+      "question": "What does position: relative commonly enable?",
+      "options": [
+        "Offsetting an element from its normal position and anchoring positioned descendants",
+        "Removing the element from the DOM",
+        "Creating a grid",
+        "Always placing the element above all others"
+      ],
+      "answer": 0,
+      "explanation": "Relative positioning keeps the element in normal flow while allowing offsets and a containing block for positioned descendants.",
+      "difficulty": "beginner",
+      "category": "conceptual"
+    },
+    {
+      "id": "css-07",
+      "question": "Which selector has higher specificity?",
+      "options": [
+        ".menu",
+        "nav",
+        "#menu",
+        "*"
+      ],
+      "answer": 2,
+      "explanation": "An ID selector has greater specificity than a class, type, or universal selector.",
+      "difficulty": "beginner",
+      "category": "conceptual"
+    },
+    {
+      "id": "css-08",
+      "question": "Which property changes the foreground text color?",
+      "options": [
+        "color",
+        "fill",
+        "font-paint",
+        "text-background"
+      ],
+      "answer": 0,
+      "explanation": "The color property sets the foreground color of an element's text and text decorations.",
+      "difficulty": "beginner",
+      "category": "practical"
+    },
+    {
+      "id": "css-09",
+      "question": "When is CSS Grid usually a natural choice?",
+      "options": [
+        "When coordinating rows and columns together",
+        "Only for text color",
+        "Only for a single icon",
+        "When no layout is needed"
+      ],
+      "answer": 0,
+      "explanation": "Grid is designed for two-dimensional layouts where rows and columns need coordinated sizing.",
+      "difficulty": "intermediate",
+      "category": "conceptual"
+    },
+    {
+      "id": "css-10",
+      "question": "Why might z-index: 9999 still appear behind another element?",
+      "options": [
+        "The element may be trapped in a lower stacking context",
+        "z-index only works on images",
+        "Numbers above 100 are invalid",
+        "The browser ignores z-index on all positioned elements"
+      ],
+      "answer": 0,
+      "explanation": "Stacking contexts are independent; a child cannot out-rank elements in a higher ancestor context just by using a larger number.",
+      "difficulty": "intermediate",
+      "category": "practical"
+    },
+    {
+      "id": "css-11",
+      "question": "Which media query detects a user's reduced-motion preference?",
+      "options": [
+        "@media (prefers-reduced-motion: reduce)",
+        "@media (motion: none)",
+        "@media (animation: off)",
+        "@media (user-motion: low)"
+      ],
+      "answer": 0,
+      "explanation": "prefers-reduced-motion communicates the user's system-level preference for fewer animations.",
+      "difficulty": "intermediate",
+      "category": "conceptual"
+    },
+    {
+      "id": "css-12",
+      "question": "What does grid-template-columns: repeat(3, 1fr) create?",
+      "options": [
+        "Three equal fractional columns",
+        "Three fixed pixel rows",
+        "One column with three gaps",
+        "A 3D transform"
+      ],
+      "answer": 0,
+      "explanation": "It creates three columns that each receive one fraction of the available grid space.",
+      "difficulty": "intermediate",
+      "category": "practical"
+    },
+    {
+      "id": "css-13",
+      "question": "Which Flexbox property aligns items along the cross axis?",
+      "options": [
+        "align-items",
+        "justify-content",
+        "flex-basis",
+        "order"
+      ],
+      "answer": 0,
+      "explanation": "align-items controls cross-axis alignment; justify-content distributes items along the main axis.",
+      "difficulty": "intermediate",
+      "category": "conceptual"
+    },
+    {
+      "id": "css-14",
+      "question": "Why use minmax(15rem, 1fr) with repeat(auto-fit, ...)?",
+      "options": [
+        "To create responsive columns with a minimum size",
+        "To force every item to 15px",
+        "To disable wrapping",
+        "To set text line height"
+      ],
+      "answer": 0,
+      "explanation": "This pattern fits as many columns as possible while keeping each at least 15rem and distributing remaining space.",
+      "difficulty": "intermediate",
+      "category": "practical"
+    },
+    {
+      "id": "css-15",
+      "question": "Which declaration lets an element's width include padding and border?",
+      "options": [
+        "box-sizing: border-box",
+        "display: contents",
+        "overflow: visible",
+        "position: static"
+      ],
+      "answer": 0,
+      "explanation": "border-box makes width and height calculations include padding and border.",
+      "difficulty": "intermediate",
+      "category": "practical"
+    },
+    {
+      "id": "css-16",
+      "question": "What usually determines which of two equally specific rules wins?",
+      "options": [
+        "The later declaration in source order",
+        "The shorter property name",
+        "The element's text",
+        "The first rule always"
+      ],
+      "answer": 0,
+      "explanation": "When origin, importance, and specificity are otherwise equal, later source order wins.",
+      "difficulty": "intermediate",
+      "category": "conceptual"
+    },
+    {
+      "id": "css-17",
+      "question": "Which property can create a stacking context when its value is not none?",
+      "options": [
+        "transform",
+        "text-align",
+        "letter-spacing",
+        "white-space"
+      ],
+      "answer": 0,
+      "explanation": "A transform other than none creates a stacking context, which can affect z-index relationships.",
+      "difficulty": "advanced",
+      "category": "conceptual"
+    },
+    {
+      "id": "css-18",
+      "question": "A child has z-index: 100 but remains under a sibling. What is the best first debugging step?",
+      "options": [
+        "Inspect ancestor stacking contexts and positioning",
+        "Set its z-index to one million immediately",
+        "Remove all CSS",
+        "Replace z-index with opacity"
+      ],
+      "answer": 0,
+      "explanation": "Inspecting ancestor contexts explains the layering boundary; a larger child number cannot cross it.",
+      "difficulty": "advanced",
+      "category": "practical"
+    },
+    {
+      "id": "css-19",
+      "question": "What is a key advantage of CSS custom properties?",
+      "options": [
+        "They enable reusable, runtime-cascading values",
+        "They automatically minify CSS",
+        "They replace HTML attributes",
+        "They prevent inheritance"
+      ],
+      "answer": 0,
+      "explanation": "Custom properties participate in the cascade and can centralize reusable design tokens.",
+      "difficulty": "advanced",
+      "category": "conceptual"
+    },
+    {
+      "id": "css-20",
+      "question": "Which strategy most directly helps avoid layout shift when an image loads?",
+      "options": [
+        "Reserve its space with width/height or aspect-ratio",
+        "Set z-index to zero",
+        "Load it only after scrolling",
+        "Use a larger alt attribute"
+      ],
+      "answer": 0,
+      "explanation": "Reserving the image's dimensions lets the browser allocate space before the file arrives, reducing layout shifts.",
+      "difficulty": "advanced",
+      "category": "practical"
+    }
+  ],
+  "javascript": [
+    {
+      "id": "js-01",
+      "question": "Which keyword declares a block-scoped variable that should not be reassigned?",
+      "options": [
+        "const",
+        "var",
+        "static",
+        "fixed"
+      ],
+      "answer": 0,
+      "explanation": "const prevents rebinding the variable name; object contents can still be mutated unless otherwise controlled.",
+      "difficulty": "beginner",
+      "category": "conceptual"
+    },
+    {
+      "id": "js-02",
+      "question": "What does Array.map() return?",
+      "options": [
+        "A new array of transformed values",
+        "The first matching item",
+        "A boolean",
+        "The original array only"
+      ],
+      "answer": 0,
+      "explanation": "map calls a function for each element and returns a new array containing the callback results.",
+      "difficulty": "beginner",
+      "category": "conceptual"
+    },
+    {
+      "id": "js-03",
+      "question": "What is the result of 2 + '3' in JavaScript?",
+      "options": [
+        "5",
+        "'23'",
+        "NaN",
+        "undefined"
+      ],
+      "answer": 1,
+      "explanation": "With a string operand, + performs concatenation after converting the number to a string.",
+      "difficulty": "beginner",
+      "category": "practical"
+    },
+    {
+      "id": "js-04",
+      "question": "Which DOM API attaches an event handler without replacing other handlers?",
+      "options": [
+        "addEventListener",
+        "setAttribute('onclick')",
+        "document.event",
+        "attachText"
+      ],
+      "answer": 0,
+      "explanation": "addEventListener registers an event listener and allows multiple listeners for the same event.",
+      "difficulty": "beginner",
+      "category": "practical"
+    },
+    {
+      "id": "js-05",
+      "question": "What does JSON.parse() do?",
+      "options": [
+        "Converts JSON text into a JavaScript value",
+        "Converts a value to JSON text",
+        "Sends an HTTP request",
+        "Checks HTML validity"
+      ],
+      "answer": 0,
+      "explanation": "JSON.parse parses valid JSON text and can throw a SyntaxError for invalid input.",
+      "difficulty": "beginner",
+      "category": "conceptual"
+    },
+    {
+      "id": "js-06",
+      "question": "What is the value of [4, 7].length?",
+      "options": [
+        "1",
+        "2",
+        "4",
+        "7"
+      ],
+      "answer": 1,
+      "explanation": "The array contains two elements, so its length is 2.",
+      "difficulty": "beginner",
+      "category": "practical"
+    },
+    {
+      "id": "js-07",
+      "question": "Which operator checks strict equality without type coercion?",
+      "options": [
+        "===",
+        "=",
+        "==",
+        "!==="
+      ],
+      "answer": 0,
+      "explanation": "=== compares value and type without coercion; = is assignment and == allows coercion.",
+      "difficulty": "beginner",
+      "category": "conceptual"
+    },
+    {
+      "id": "js-08",
+      "question": "What does a function return if it reaches its end without a return statement?",
+      "options": [
+        "undefined",
+        "null",
+        "false",
+        "0"
+      ],
+      "answer": 0,
+      "explanation": "A function with no explicit return produces undefined.",
+      "difficulty": "beginner",
+      "category": "practical"
+    },
+    {
+      "id": "js-09",
+      "question": "What does an async function always return?",
+      "options": [
+        "A Promise",
+        "An array",
+        "A callback",
+        "A DOM element"
+      ],
+      "answer": 0,
+      "explanation": "An async function wraps its return value in a promise; thrown errors become rejected promises.",
+      "difficulty": "intermediate",
+      "category": "conceptual"
+    },
+    {
+      "id": "js-10",
+      "question": "What does await do inside an async function?",
+      "options": [
+        "Pauses that function until a promise settles",
+        "Blocks the entire browser thread",
+        "Converts a promise to a callback",
+        "Starts a worker"
+      ],
+      "answer": 0,
+      "explanation": "await suspends the surrounding async function, not the whole JavaScript thread, until the promise settles.",
+      "difficulty": "intermediate",
+      "category": "conceptual"
+    },
+    {
+      "id": "js-11",
+      "question": "fetch('/api/items') returns a response with status 404. What is true by default?",
+      "options": [
+        "The promise resolves; check response.ok or status",
+        "The promise always rejects",
+        "The browser retries forever",
+        "The response body is automatically thrown away"
+      ],
+      "answer": 0,
+      "explanation": "fetch rejects for network-level failures, not ordinary HTTP error statuses such as 404.",
+      "difficulty": "intermediate",
+      "category": "practical"
+    },
+    {
+      "id": "js-12",
+      "question": "What does Promise.all() do if any input promise rejects?",
+      "options": [
+        "The returned promise rejects with that failure",
+        "It ignores the rejection",
+        "It converts it to null",
+        "It retries that promise"
+      ],
+      "answer": 0,
+      "explanation": "Promise.all fulfills when all inputs fulfill and rejects as soon as one rejects.",
+      "difficulty": "intermediate",
+      "category": "conceptual"
+    },
+    {
+      "id": "js-13",
+      "question": "Which is the safest way to render untrusted text into an element?",
+      "options": [
+        "Set textContent",
+        "Concatenate it into innerHTML",
+        "Use eval()",
+        "Put it inside a style attribute"
+      ],
+      "answer": 0,
+      "explanation": "textContent inserts text rather than parsing it as markup, avoiding a common injection risk.",
+      "difficulty": "intermediate",
+      "category": "practical"
+    },
+    {
+      "id": "js-14",
+      "question": "What does event.preventDefault() do in a form submit handler?",
+      "options": [
+        "Cancels the browser's default submission action",
+        "Stops every listener",
+        "Deletes the form",
+        "Prevents the event from being created"
+      ],
+      "answer": 0,
+      "explanation": "It prevents the default action, such as a form navigation, while other listeners may still run.",
+      "difficulty": "intermediate",
+      "category": "practical"
+    },
+    {
+      "id": "js-15",
+      "question": "In an array filter callback, what does returning false mean for an item?",
+      "options": [
+        "Exclude it from the resulting array",
+        "Convert it to null",
+        "Stop all later callbacks",
+        "Sort it last"
+      ],
+      "answer": 0,
+      "explanation": "filter retains elements for which the callback returns a truthy value.",
+      "difficulty": "intermediate",
+      "category": "conceptual"
+    },
+    {
+      "id": "js-16",
+      "question": "Which syntax provides a fallback when a value is null or undefined?",
+      "options": [
+        "value ?? fallback",
+        "value && fallback",
+        "value === fallback",
+        "value :: fallback"
+      ],
+      "answer": 0,
+      "explanation": "Nullish coalescing uses the right-hand value only for null or undefined, unlike || which also treats 0 and empty string as falsy.",
+      "difficulty": "intermediate",
+      "category": "practical"
+    },
+    {
+      "id": "js-17",
+      "question": "A promise rejects inside an async function. How can the caller handle it?",
+      "options": [
+        "Use try/catch around await or attach .catch()",
+        "Use a CSS selector",
+        "Only with setTimeout",
+        "A rejected promise cannot be handled"
+      ],
+      "answer": 0,
+      "explanation": "Awaited rejection can be handled with try/catch; promise chains can use catch().",
+      "difficulty": "advanced",
+      "category": "conceptual"
+    },
+    {
+      "id": "js-18",
+      "question": "What is the output of Promise.resolve(3).then(value => value * 2)?",
+      "options": [
+        "A promise fulfilled with 6",
+        "The number 6 immediately",
+        "A rejected promise",
+        "undefined"
+      ],
+      "answer": 0,
+      "explanation": "then returns a new promise fulfilled with the callback's return value, here 6.",
+      "difficulty": "advanced",
+      "category": "practical"
+    },
+    {
+      "id": "js-19",
+      "question": "Why can an event listener on a parent handle clicks from future child elements?",
+      "options": [
+        "Event bubbling enables delegation",
+        "The parent copies all children",
+        "CSS Grid forwards events",
+        "Listeners run on a timer"
+      ],
+      "answer": 0,
+      "explanation": "Bubbling carries many events from the target toward ancestors, enabling delegation with a target check.",
+      "difficulty": "advanced",
+      "category": "conceptual"
+    },
+    {
+      "id": "js-20",
+      "question": "What is a benefit of AbortController with fetch?",
+      "options": [
+        "It can cancel an in-flight request",
+        "It converts JSON to HTML",
+        "It guarantees a response",
+        "It caches all requests permanently"
+      ],
+      "answer": 0,
+      "explanation": "Passing an AbortSignal to fetch allows code to cancel the request, for example when a view is no longer needed.",
+      "difficulty": "advanced",
+      "category": "practical"
+    }
+  ],
+  "nodejs": [
+    {
+      "id": "node-01",
+      "question": "What is Node.js primarily used for?",
+      "options": [
+        "Running JavaScript outside the browser",
+        "Styling HTML elements",
+        "Creating SQL tables only",
+        "Replacing the JavaScript language"
+      ],
+      "answer": 0,
+      "explanation": "Node.js is a JavaScript runtime commonly used for servers, tooling, and command-line programs.",
+      "difficulty": "beginner",
+      "category": "conceptual"
+    },
+    {
+      "id": "node-02",
+      "question": "In Express, what does app.get('/items', handler) define?",
+      "options": [
+        "A handler for GET requests to /items",
+        "A file named items",
+        "A database schema",
+        "A browser event"
+      ],
+      "answer": 0,
+      "explanation": "The route pairs the GET method and path with the provided request handler.",
+      "difficulty": "beginner",
+      "category": "practical"
+    },
+    {
+      "id": "node-03",
+      "question": "Which module provides promise-based file operations in Node.js?",
+      "options": [
+        "node:fs/promises",
+        "node:css",
+        "node:html",
+        "node:browser"
+      ],
+      "answer": 0,
+      "explanation": "The built-in node:fs/promises module exposes promise-based file-system operations.",
+      "difficulty": "beginner",
+      "category": "conceptual"
+    },
+    {
+      "id": "node-04",
+      "question": "What does npm install express do in a project?",
+      "options": [
+        "Adds Express as a project dependency",
+        "Starts the server automatically",
+        "Publishes the app",
+        "Creates an admin user"
+      ],
+      "answer": 0,
+      "explanation": "npm install adds the package and records it as a dependency in package metadata.",
+      "difficulty": "beginner",
+      "category": "practical"
+    },
+    {
+      "id": "node-05",
+      "question": "Which Express middleware parses JSON request bodies?",
+      "options": [
+        "express.json()",
+        "express.static()",
+        "express.route()",
+        "express.render()"
+      ],
+      "answer": 0,
+      "explanation": "express.json() parses JSON payloads and makes the result available on req.body.",
+      "difficulty": "beginner",
+      "category": "practical"
+    },
+    {
+      "id": "node-06",
+      "question": "What status code commonly indicates a resource was created successfully?",
+      "options": [
+        "201",
+        "301",
+        "404",
+        "500"
+      ],
+      "answer": 0,
+      "explanation": "201 Created indicates the request succeeded and created a resource.",
+      "difficulty": "beginner",
+      "category": "conceptual"
+    },
+    {
+      "id": "node-07",
+      "question": "Where should a private API key be stored for a local Node app?",
+      "options": [
+        "In a server-side environment variable",
+        "In public JavaScript",
+        "In an HTML data attribute",
+        "In a URL query string"
+      ],
+      "answer": 0,
+      "explanation": "Secrets belong on the server, typically in environment configuration excluded from version control.",
+      "difficulty": "beginner",
+      "category": "conceptual"
+    },
+    {
+      "id": "node-08",
+      "question": "What should a GET /api/courses route usually do?",
+      "options": [
+        "Return course data without changing it",
+        "Delete all courses",
+        "Create a new session only",
+        "Change a password"
+      ],
+      "answer": 0,
+      "explanation": "GET is intended to retrieve a representation and should not perform a state-changing operation.",
+      "difficulty": "beginner",
+      "category": "conceptual"
+    },
+    {
+      "id": "node-09",
+      "question": "Why validate req.body on the server even when the browser validates a form?",
+      "options": [
+        "Clients can bypass browser validation",
+        "Browsers send only trusted data",
+        "It makes CSS load faster",
+        "Express requires HTML"
+      ],
+      "answer": 0,
+      "explanation": "Any client can send arbitrary requests, so server-side validation is essential at the trust boundary.",
+      "difficulty": "intermediate",
+      "category": "conceptual"
+    },
+    {
+      "id": "node-10",
+      "question": "Which status is suitable when a requested resource does not exist?",
+      "options": [
+        "404",
+        "201",
+        "204",
+        "302"
+      ],
+      "answer": 0,
+      "explanation": "404 Not Found indicates the server has no current representation for the requested resource.",
+      "difficulty": "intermediate",
+      "category": "practical"
+    },
+    {
+      "id": "node-11",
+      "question": "What is middleware in Express?",
+      "options": [
+        "A function in the request-response pipeline",
+        "A JSON database",
+        "A browser plugin",
+        "A CSS preprocessor"
+      ],
+      "answer": 0,
+      "explanation": "Middleware can inspect or modify request/response objects, end the response, or pass control onward.",
+      "difficulty": "intermediate",
+      "category": "conceptual"
+    },
+    {
+      "id": "node-12",
+      "question": "What does next() commonly do in Express middleware?",
+      "options": [
+        "Pass control to the next middleware or route handler",
+        "Restart Node.js",
+        "Send a 404 automatically",
+        "Close the browser"
+      ],
+      "answer": 0,
+      "explanation": "Calling next() advances through the middleware chain unless an error is passed.",
+      "difficulty": "intermediate",
+      "category": "practical"
+    },
+    {
+      "id": "node-13",
+      "question": "Which response best fits a malformed or invalid request body?",
+      "options": [
+        "400 Bad Request",
+        "200 OK",
+        "301 Moved Permanently",
+        "304 Not Modified"
+      ],
+      "answer": 0,
+      "explanation": "400 indicates a client request that the server cannot process because it is invalid.",
+      "difficulty": "intermediate",
+      "category": "practical"
+    },
+    {
+      "id": "node-14",
+      "question": "Why use a password hash such as bcrypt instead of encryption or plaintext?",
+      "options": [
+        "It is designed to make password guessing computationally expensive",
+        "It makes passwords recoverable by admins",
+        "It avoids needing authentication",
+        "It stores passwords in the browser"
+      ],
+      "answer": 0,
+      "explanation": "Password hashing is intentionally one-way and costly to slow offline guessing; plaintext and reversible encryption are not appropriate password storage.",
+      "difficulty": "intermediate",
+      "category": "conceptual"
+    },
+    {
+      "id": "node-15",
+      "question": "What does a session cookie marked HttpOnly help prevent?",
+      "options": [
+        "Client-side JavaScript from reading the cookie value",
+        "The browser from sending the cookie",
+        "The server from setting expiration",
+        "Users from opening devtools"
+      ],
+      "answer": 0,
+      "explanation": "HttpOnly prevents scripts from reading the cookie through document.cookie, reducing exposure to some XSS attacks.",
+      "difficulty": "intermediate",
+      "category": "conceptual"
+    },
+    {
+      "id": "node-16",
+      "question": "Which Express route handles POST requests to /api/users?",
+      "options": [
+        "app.post('/api/users', handler)",
+        "app.get('/api/users', handler)",
+        "app.send('/api/users', handler)",
+        "app.route('/api/users') only"
+      ],
+      "answer": 0,
+      "explanation": "app.post registers a handler for POST requests at the path.",
+      "difficulty": "intermediate",
+      "category": "practical"
+    },
+    {
+      "id": "node-17",
+      "question": "Why should a production Express app avoid the default in-memory session store?",
+      "options": [
+        "It is not designed for production scale or process restarts",
+        "It cannot store strings",
+        "It disables HTTPS",
+        "It exposes all passwords"
+      ],
+      "answer": 0,
+      "explanation": "The default store is intended for development; it does not provide robust persistence or multi-instance coordination.",
+      "difficulty": "advanced",
+      "category": "conceptual"
+    },
+    {
+      "id": "node-18",
+      "question": "What should an Express error handler avoid sending to the client in production?",
+      "options": [
+        "Detailed stack traces and secrets",
+        "A generic error message",
+        "A suitable status code",
+        "A request ID"
+      ],
+      "answer": 0,
+      "explanation": "Detailed stack traces can reveal internals and secrets; log details server-side and return a safe message.",
+      "difficulty": "advanced",
+      "category": "conceptual"
+    },
+    {
+      "id": "node-19",
+      "question": "What is the main purpose of rate limiting an expensive API endpoint?",
+      "options": [
+        "Reduce abuse and excessive request volume",
+        "Encrypt request bodies",
+        "Replace input validation",
+        "Increase every response size"
+      ],
+      "answer": 0,
+      "explanation": "Rate limiting bounds request frequency to mitigate abuse and protect availability or paid resources.",
+      "difficulty": "advanced",
+      "category": "practical"
+    },
+    {
+      "id": "node-20",
+      "question": "A route awaits a database call that rejects. What is the correct production behavior?",
+      "options": [
+        "Handle the error, log details safely, and send a controlled error response",
+        "Ignore it and leave the request open",
+        "Return the database password",
+        "Crash silently"
+      ],
+      "answer": 0,
+      "explanation": "Asynchronous failures must be handled so the request receives a controlled response and operational details stay in server logs.",
+      "difficulty": "advanced",
+      "category": "practical"
+    }
+  ]
+}

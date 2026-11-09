@@ -1,0 +1,30 @@
+{
+  "name": "codepath-learning-platform",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A full-stack web development learning platform",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "check": "node --check server.js && node --check lib/database.js && node --check middleware/sqlite-session-store.js && node --check routes/admin.js && node --check routes/courses.js && node --check routes/quizzes.js && node --check routes/chat.js && node --check scripts/init-admin.js && node --check test/results.test.js && node --check public/js/config.js && node --check public/js/app.js && node --check public/js/courses.js && node --check public/js/quiz.js && node --check public/js/admin.js && node --check public/js/chatbot.js",
+    "test": "node --test test/results.test.js",
+    "init-admin": "node scripts/init-admin.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "express-session": "^1.18.1",
+    "helmet": "^8.0.0",
+    "better-sqlite3": "^12.4.1",
+    "openai": "^4.77.0"
+  },
+  "devDependencies": {
+    "supertest": "^7.1.4"
+  },
+  "allowScripts": {
+    "better-sqlite3@12.11.1": true
+  }
+}

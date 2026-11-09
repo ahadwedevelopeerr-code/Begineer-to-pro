@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin Login | CodePath</title><meta name="description" content="Sign in to manage CodePath courses and quiz questions."><meta name="theme-color" content="#101622">
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="./css/style.css">
+  <script src="./js/config.js" defer></script><script src="./js/app.js" defer></script><script src="./js/admin.js" defer></script>
+</head>
+<body class="admin-body"><header class="site-header"><a class="brand" href="./" aria-label="CodePath home"><span class="brand-mark">C<span>_</span></span><span>codepath</span></a><a class="back-home" href="./">← Back to learning</a></header>
+  <main class="login-main page-width"><section class="login-intro"><p class="eyebrow">CODEPATH / ADMINISTRATION</p><h1>Keep the learning<br><em>moving forward.</em></h1><p>Sign in to manage quiz questions, course lessons, and learning statistics.</p></section>
+    <section class="login-panel" id="login-panel"><div class="panel-kicker"><span class="secure-dot"></span> SECURE ADMIN ACCESS</div><h2>Welcome back.</h2><p class="panel-copy">Use the administrator credentials configured for this installation.</p><form id="login-form"><label for="username">Username</label><input id="username" name="username" autocomplete="username" required maxlength="80"><label for="password">Password</label><input id="password" name="password" type="password" autocomplete="current-password" required maxlength="200"><p class="form-error" id="login-error" role="alert"></p><button class="button button-primary full-button" type="submit">Sign in <span aria-hidden="true">↗</span></button></form><p class="login-footnote">Admin credentials are stored on the server as a one-way password hash.</p></section>
+  </main><footer class="page-width login-footer">© <span data-year></span> CodePath Learning <span>·</span> Admin portal</footer>
+</body>
+</html>

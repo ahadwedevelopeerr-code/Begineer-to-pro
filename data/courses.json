@@ -1,0 +1,166 @@
+[
+  {
+    "slug": "html",
+    "title": "HTML Foundations",
+    "tagline": "Structure the web with clarity and meaning.",
+    "description": "Learn to build accessible, semantic pages from the document skeleton to search-friendly content and forms.",
+    "color": "mint",
+    "objectives": [
+      "Create valid, semantic page structures",
+      "Build accessible links, media, and forms",
+      "Apply practical on-page SEO fundamentals"
+    ],
+    "lessons": [
+      {
+        "id": "html-01",
+        "title": "A page from the inside out",
+        "level": "beginner",
+        "summary": "Understand the document shell, elements, and nesting.",
+        "content": "HTML describes the meaning and structure of content. A browser parses the doctype, then the html root, head metadata, and visible body. Elements are written with tags; nest them to show relationships, and close them in the reverse order they were opened. Indentation makes that structure easier to review.",
+        "example": "<!doctype html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>My first page</title>\n</head>\n<body>\n  <h1>Welcome</h1>\n  <p>A page has structure.</p>\n</body>\n</html>",
+        "exercise": "Create a page with a descriptive title, one h1, two paragraphs, and a link to a related resource."
+      },
+      {
+        "id": "html-02",
+        "title": "Semantic sections and accessible forms",
+        "level": "intermediate",
+        "summary": "Choose elements by purpose and label controls for everyone.",
+        "content": "Semantic elements communicate a page outline to browsers, assistive technology, and maintainers. Use header, nav, main, article, section, and footer according to their roles. Forms need visible labels associated with controls by matching for/id values. Use button for actions and anchor for navigation; native controls provide useful keyboard behavior.",
+        "example": "<main>\n  <article>\n    <h1>Join the newsletter</h1>\n    <form>\n      <label for=\"email\">Email address</label>\n      <input id=\"email\" name=\"email\" type=\"email\" required>\n      <button type=\"submit\">Subscribe</button>\n    </form>\n  </article>\n</main>",
+        "exercise": "Turn a generic div-only article into semantic markup. Add a form with a properly connected label and an email input."
+      },
+      {
+        "id": "html-03",
+        "title": "Search-ready metadata and media",
+        "level": "advanced",
+        "summary": "Improve discoverability without sacrificing useful content.",
+        "content": "Search engines need clear, crawlable page content. Give each page a unique title and useful meta description, use headings in a logical hierarchy, and write descriptive link text. Images that convey information need concise alt text; decorative images should use an empty alt attribute. Structured data can add machine-readable context, but it does not guarantee a rich result.",
+        "example": "<head>\n  <title>Trail Guide | North Shore</title>\n  <meta name=\"description\" content=\"Plan a family-friendly 4 km walk along the North Shore.\">\n  <meta property=\"og:title\" content=\"North Shore Trail Guide\">\n</head>\n<body>\n  <img src=\"trail-map.webp\" alt=\"Map of the North Shore loop trail\">\n</body>",
+        "exercise": "Write unique title and description metadata for a course page, then audit its headings, image alternatives, and link text."
+      }
+    ]
+  },
+  {
+    "slug": "css",
+    "title": "CSS & Layout",
+    "tagline": "Turn a solid structure into a confident interface.",
+    "description": "Build responsive visual systems with the cascade, modern layout tools, typography, and accessible states.",
+    "color": "blue",
+    "objectives": [
+      "Reason about the cascade and selectors",
+      "Build responsive layouts with Flexbox and Grid",
+      "Create accessible, consistent visual states"
+    ],
+    "lessons": [
+      {
+        "id": "css-01",
+        "title": "Selectors, cascade, and box model",
+        "level": "beginner",
+        "summary": "Understand how styles are selected and sized.",
+        "content": "A declaration pairs a property with a value. Selectors match elements, while the cascade resolves competing declarations using origin, importance, specificity, and source order. The default content-box width excludes padding and borders; border-box includes them, which is often easier for layout. Keep selectors purposeful and avoid escalating specificity unnecessarily.",
+        "example": "* { box-sizing: border-box; }\n.card {\n  width: min(100%, 28rem);\n  padding: 1.5rem;\n  border: 1px solid #d5dfeb;\n  border-radius: 0.5rem;\n}",
+        "exercise": "Style a profile panel with a readable width, spacing, border, and a small-screen rule. Explain which selector wins when two rules match."
+      },
+      {
+        "id": "css-02",
+        "title": "Flexbox and Grid in real layouts",
+        "level": "intermediate",
+        "summary": "Choose one-dimensional or two-dimensional layout tools.",
+        "content": "Flexbox distributes items along one main axis and is excellent for toolbars, navigation, and aligned groups. Grid defines rows and columns together, making it a strong fit for page regions and card galleries. Both support responsive sizing without floats. Use minmax and auto-fit when the number of columns should adapt to available space.",
+        "example": ".course-grid {\n  display: grid;\n  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));\n  gap: 1rem;\n}\n.toolbar { display: flex; align-items: center; gap: .75rem; }",
+        "exercise": "Build a three-card gallery that becomes one column on narrow screens, and a toolbar whose controls stay aligned."
+      },
+      {
+        "id": "css-03",
+        "title": "Stacking, motion, and responsive polish",
+        "level": "advanced",
+        "summary": "Debug stacking contexts and respect user motion preferences.",
+        "content": "A large z-index value does not escape its stacking context. Properties such as transform, opacity below one, and positioned elements with z-index can create contexts that stack independently. First inspect ancestor contexts, then choose a deliberate layer scale. Use transitions for state changes and disable nonessential motion when reduced motion is requested.",
+        "example": ".dialog { position: fixed; inset: 0; z-index: 20; }\n@media (prefers-reduced-motion: reduce) {\n  *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }\n}",
+        "exercise": "Debug a menu hidden beneath a transformed header. Identify the stacking context and document a small, consistent z-index scale."
+      }
+    ]
+  },
+  {
+    "slug": "javascript",
+    "title": "JavaScript Essentials",
+    "tagline": "Make interfaces respond to people.",
+    "description": "Move from core language concepts into the DOM, asynchronous work, and maintainable browser applications.",
+    "color": "gold",
+    "objectives": [
+      "Use functions, arrays, objects, and modules",
+      "Respond to browser events and update the DOM",
+      "Handle promises, errors, and asynchronous requests"
+    ],
+    "lessons": [
+      {
+        "id": "js-01",
+        "title": "Values, functions, and data",
+        "level": "beginner",
+        "summary": "Build small programs from predictable pieces.",
+        "content": "Use const by default and let when reassignment is needed. Functions name reusable behavior; arrays represent ordered collections and objects represent keyed records. Prefer strict comparisons and return values explicitly. Small functions with clear inputs are easier to test than code that mixes unrelated tasks.",
+        "example": "const lessons = [\"HTML\", \"CSS\"];\nfunction makeGreeting(name) {\n  return `Welcome, ${name}!`;\n}\nconst student = { name: \"Ari\", completed: 2 };\nconsole.log(makeGreeting(student.name), lessons.length);",
+        "exercise": "Write a function that accepts an array of quiz scores and returns the average. Test the empty-array case."
+      },
+      {
+        "id": "js-02",
+        "title": "DOM events and safe rendering",
+        "level": "intermediate",
+        "summary": "Connect user actions to accessible interface updates.",
+        "content": "Select elements with querySelector, then listen for events with addEventListener. Event handlers should do one clear job. Use textContent for untrusted text; setting innerHTML with user input can create cross-site scripting vulnerabilities. Native buttons and form controls already support keyboard activation and should remain the default.",
+        "example": "const form = document.querySelector('#signup');\nform.addEventListener('submit', event => {\n  event.preventDefault();\n  const name = new FormData(form).get('name');\n  document.querySelector('#message').textContent = `Thanks, ${name}!`;\n});",
+        "exercise": "Create a counter with increment and reset buttons. Update its text with textContent and ensure both controls work with a keyboard."
+      },
+      {
+        "id": "js-03",
+        "title": "Promises, async/await, and errors",
+        "level": "advanced",
+        "summary": "Coordinate asynchronous work without losing failure handling.",
+        "content": "A promise represents a value that may be available later. async functions always return promises, and await pauses that function until a promise settles. Wrap awaited operations in try/catch when failures need a useful response. Check response.ok for fetch because HTTP errors do not automatically reject the promise.",
+        "example": "async function loadCourses() {\n  try {\n    const response = await fetch('/api/courses');\n    if (!response.ok) throw new Error('Could not load courses');\n    return await response.json();\n  } catch (error) {\n    console.error(error);\n    return [];\n  }\n}",
+        "exercise": "Fetch a JSON endpoint, render a loading state, and show a useful error when the network fails or the response is not successful."
+      }
+    ]
+  },
+  {
+    "slug": "nodejs",
+    "title": "Node.js & APIs",
+    "tagline": "Build the services behind useful products.",
+    "description": "Use Node.js and Express to create validated REST endpoints, protect sessions, and work with persistent data.",
+    "color": "coral",
+    "objectives": [
+      "Understand Node.js modules and asynchronous I/O",
+      "Design and validate REST routes with Express",
+      "Use middleware and sessions to protect server features"
+    ],
+    "lessons": [
+      {
+        "id": "node-01",
+        "title": "Node.js runtime and modules",
+        "level": "beginner",
+        "summary": "Run JavaScript beyond the browser.",
+        "content": "Node.js runs JavaScript using the V8 engine and provides server-side APIs for files, networking, and processes. CommonJS uses require and module.exports; modern projects may also use ES modules. Asynchronous I/O lets a server handle other work while waiting on disk or network operations. Avoid blocking the event loop with expensive synchronous work in request handlers.",
+        "example": "const fs = require('fs/promises');\nasync function readSettings() {\n  const text = await fs.readFile('./settings.json', 'utf8');\n  return JSON.parse(text);\n}\nreadSettings().then(console.log).catch(console.error);",
+        "exercise": "Write a script that reads a local JSON file asynchronously and handles both malformed JSON and a missing file."
+      },
+      {
+        "id": "node-02",
+        "title": "Express routes and validation",
+        "level": "intermediate",
+        "summary": "Build small REST endpoints with predictable responses.",
+        "content": "An Express route combines an HTTP method with a path and handler. Middleware can parse JSON, log requests, authenticate users, or handle errors. Treat request bodies as untrusted: validate type, length, and allowed values before using them. Return suitable status codes such as 201 for creation, 400 for invalid input, and 404 for missing resources.",
+        "example": "const express = require('express');\nconst app = express();\napp.use(express.json({ limit: '16kb' }));\napp.post('/api/notes', (req, res) => {\n  if (typeof req.body.title !== 'string' || !req.body.title.trim()) {\n    return res.status(400).json({ error: 'A title is required.' });\n  }\n  res.status(201).json({ title: req.body.title.trim() });\n});",
+        "exercise": "Add a GET route for a resource and a POST route that validates required fields, length limits, and error responses."
+      },
+      {
+        "id": "node-03",
+        "title": "Sessions, security, and deployment",
+        "level": "advanced",
+        "summary": "Protect private routes and prepare production settings.",
+        "content": "Hash passwords with a slow password-hashing algorithm such as bcrypt; never store plaintext passwords. Session cookies should be HTTP-only and same-site, use secure cookies over HTTPS in production, and rely on a long secret stored outside source control. Add rate limits to costly endpoints, validate inputs, and avoid returning secrets or stack traces to clients. Production applications should use a persistent session store rather than the in-memory development store.",
+        "example": "app.use(session({\n  secret: process.env.SESSION_SECRET,\n  resave: false,\n  saveUninitialized: false,\n  cookie: { httpOnly: true, sameSite: 'lax', secure: process.env.NODE_ENV === 'production' }\n}));",
+        "exercise": "Protect an admin-only endpoint with session middleware. Review cookie flags, password hashing, error responses, and production session storage."
+      }
+    ]
+  }
+]
